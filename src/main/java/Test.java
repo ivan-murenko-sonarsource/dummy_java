@@ -1,7 +1,11 @@
+import java.util.stream.Stream;
+
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Stream.of("Hello", " ", "world", "!")
+                .toList()
+                .forEach(System.out::print);
     }
 
 }
